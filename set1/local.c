@@ -12,6 +12,8 @@ void local_tests(void) {
 
     int n = 7;
     double res = divide_apples(n);
-    printf("result of division: %f", res);
+    printf("result of division: %f\n", res);
+
+    printf("This is a local test");
 
 }
