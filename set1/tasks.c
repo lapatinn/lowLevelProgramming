@@ -1,5 +1,4 @@
 #include "tasks.h"
-#include <math.h>
 
 // Calculates the area of a rectangle
 // Example: calc_area(2, 3) -> 6
@@ -34,7 +33,7 @@ long range_sum(int n) {
 long squared_sum(int n) {
     long result = 0;
     for (long x = 1; x <= n; x++) {
-        long sq = pow(x, 2);
+        long sq = x * x;
         result += sq;
     }
     return result;
@@ -54,7 +53,8 @@ double divide_apples(int n) {
 //   - area -> 12
 //   - perimeter -> 14
 void analyze_rectangle(int width, int height, long *area, long *perimeter) {
-    
+    *area = (long) width * (long) height;
+    *perimeter = (2 * (long) width) + (2 * (long) height);
 }
 
 // Counts the steps in the following process:

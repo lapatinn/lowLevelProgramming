@@ -10,10 +10,9 @@ void local_tests(void) {
         printf("%d is even\n", x);
     }
 
-    int n = 7;
-    double res = divide_apples(n);
-    printf("result of division: %f\n", res);
-
-    printf("This is a local test");
-
+    printf("Analyze rect");
+    long a = 0;
+    long p = 0;
+    analyze_rectangle(2, 2, &a, &p);
+    printf("res: %ld, %ld", a, p );
 }
