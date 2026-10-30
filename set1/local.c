@@ -10,9 +10,14 @@ void local_tests(void) {
         printf("%d is even\n", x);
     }
 
-    printf("Analyze rect");
+    printf("\nAnalyze rect: \n");
     long a = 0;
     long p = 0;
     analyze_rectangle(2, 2, &a, &p);
-    printf("res: %ld, %ld", a, p );
+    printf("\nres: %ld, %ld \n", a, p );
+
+    printf("\nCount steps: \n");
+    int steps = count_steps(10);
+    printf("Steps counted: %d", steps);
+
 }
